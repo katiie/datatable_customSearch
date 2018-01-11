@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>DataTable custom search example</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link rel="stylesheet" href='https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css' />
+        <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.css" >
+        <link rel="stylesheet"  href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" >
+
+
+    </head>
+    <body>
+        <div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Search for users</h4>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <input class="form-control searchinput"  type="text" id="searchstring" placeholder="Search users" >
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="m-t-30 m-b-10">Position</h5>
+                            <select class="selectpicker searchinput" id="positionselect" data-style="form-control btn-secondary">
+                                <option selected value="">Select Position</option>
+                                <option value="Accountant">Accountant</option>
+                                <option value="Junior Technical Author">Junior Technical Author</option>
+                                <option value="Software Engineer">Software Engineer</option>
+                                <option value="Integration Specialist">Integration Specialist</option>
+                                <option value="Pre-Sales Support">Pre-Sales Support</option>
+                                <option value="Sales Assistant">Sales Assistant</option>
+                                <option value="Senior Javascript Developer">Senior Javascript Developer</option>
+                                <option value=""></option>
+
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="m-t-30 m-b-10">Office</h5>
+                            <select class="selectpicker searchinput" id="officeselect" data-style="form-control btn-secondary">
+                                <option selected value="">Select Office</option>
+                                <option value="Tokyo">Tokyo</option>
+                                <option value="London">London</option>
+                                <option value="San Francisco">San Francisco</option>
+                                <option value="New York">New York</option>
+                                <option value="Edinburgh">Edinburgh</option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-4">
+                            <h5 class="m-t-30">Start Date </h5>
+                            <input type="text" class="form-control datepicker searchinput" id="searchdate" value="">
+
+                        </div>
+                        
+
+                        <div class="col-md-3">
+                            <h5 class="m-t-30"></h5>
+
+                            <div class="input-group input-daterange">
+                                <button id="searchbtn">Search</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-12">
+                            <table id="sampleTable" class="display" width="100%">
+
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <script
+                src="https://code.jquery.com/jquery-3.2.1.min.js"
+                integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js" ></script>
+        <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+        <script src="sampledata.js" ></script>
+         <script src="main.js?date="6476" ></script>
+
+
+
+        </html>
